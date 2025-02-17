@@ -2,6 +2,7 @@
 
 `repl-mode` es un modo interactivo para Emacs que simula un REPL (Read-Eval-Print Loop) utilizando un ejecutable externo. Permite evaluar líneas de código o texto seleccionado, mostrar los resultados en el buffer actual y personalizar el comportamiento.
 
+
 ## Características principales
 
 - **Evaluación flexible**: Evalúa líneas individuales o bloques de texto seleccionados.
@@ -12,6 +13,7 @@
   - Decide si el input debe ser encomillado automáticamente.
   - Elimina espacios innecesarios del resultado.
 - **Compatibilidad con comandos de shell**: Evalúa comandos como `ls`, `find`, etc., además de scripts personalizados.
+
 
 ## Instalación
 
@@ -32,6 +34,7 @@
    ```
    o mediante `M-x` y `repl-mode-activate`.
 
+
 ## Configuración
 
 Para personalizar el comportamiento de `repl-mode` se pueden ajustar las siguientes variables:
@@ -50,6 +53,7 @@ Ejemplo de configuración personalizada:
 (setq repl-mode-quote-input nil)
 (setq repl-mode-use-stdin nil)
 ```
+
 
 ## Uso
 
@@ -119,9 +123,35 @@ Ejemplo de configuración personalizada:
    multilinea.
    ```
 
+## Comparación con otros paquetes disponibles en Emacs
+
+### Diferencias entre `repl-mode` y `comint`
+
+- **Propósito**:
+  - `repl-mode`: Simula un REPL ligero para evaluar rápidamente líneas o bloques de texto utilizando un ejecutable externo. Ideal para tareas simples como ejecutar comandos de shell o scripts.
+  - `comint`: Proporciona una sesión interactiva completa con procesos externos, como shells o intérpretes de lenguajes de programación. Mantén un estado persistente entre comandos.
+
+- **Sesión interactiva**:
+  - `repl-mode`: No mantiene una sesión activa. Cada evaluación es independiente y no guarda estado entre comandos.
+  - `comint`: Mantiene una conexión activa con el proceso externo, permitiendo interacciones continuas y estados persistentes.
+
+- **Personalización**:
+  - `repl-mode`: Ofrece opciones simples y enfocadas, como personalizar el prefijo del resultado, controlar si se duplican las líneas evaluadas o decidir si el input se pasa por `stdin` o como argumentos.
+  - `comint`: Altamente personalizable, con soporte para autocompletado, resaltado de errores y manejo avanzado de entradas/salidas.
+
+- **Evaluación de regiones seleccionadas**:
+  - `repl-mode`: Permite evaluar una región de texto seleccionada, lo que es útil para trabajar con bloques de código multilínea o comandos complejos sin necesidad de dividirlos en líneas individuales. Por ejemplo, puedes seleccionar un bloque de texto y enviarlo directamente al ejecutable para su evaluación.
+  - `comint`: Aunque puede manejar múltiples líneas, requiere que el usuario envíe los comandos manualmente dentro de la sesión interactiva, lo que puede ser menos conveniente para bloques de texto predefinidos.
+
+- **Casos de uso**:
+  - `repl-mode`: Perfecto para evaluar rápidamente código o comandos sin necesidad de iniciar una sesión interactiva completa. Es especialmente útil cuando trabajas con scripts, comandos de shell o fragmentos de código específicos.
+  - `comint`: Ideal para flujos de trabajo avanzados que requieren interacción continua con un proceso externo, como desarrollo iterativo en intérpretes de Python o shells.
+
+
 ## Contribuciones
 
 Si encontrás algún error o tenés ideas para nuevas características abrí un issue o enviá un pull request.
+
 
 ## Licencia
 
