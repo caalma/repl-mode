@@ -121,7 +121,7 @@ Ejemplo de configuración personalizada:
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si encuentras algún error, tienes ideas para nuevas características o quieres mejorar la documentación, no dudes en abrir un issue o enviar un pull request.
+Si encontrás algún error o tenés ideas para nuevas características abrí un issue o enviá un pull request.
 
 ## Licencia
 
