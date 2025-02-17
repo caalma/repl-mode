@@ -1,0 +1,10 @@
+(progn
+  (repl-mode-activate "./utils/eval-args.py")
+  (setq repl-mode-result "\n--> ")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input t)
+  (setq repl-mode-use-stdin nil)
+  )
+
+2 * 3

@@ -1,0 +1,41 @@
+---------------------------------------------
+
+(progn
+  (repl-mode-activate "./utils/eval-args.py")
+  (setq repl-mode-result "\n=> ")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input t)
+  (setq repl-mode-use-stdin nil)
+  )
+
+
+((2 + 3) * 7) / 2
+
+2 + (3 * 7 / 2)
+
+2 + 3 * 7 / 2
+
+2 + 3
+=> 5 * 7
+=> 35 / 2
+=> 17.5
+
+2 + 3 * 7 / 2
+=> 10.5
+2 + 10.5
+=> 12.5
+
+
+---------------------------------------------
+
+(progn
+  (repl-mode-activate "./utils/eval-args.py")
+  (setq repl-mode-result " ")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input t)
+  (setq repl-mode-use-stdin nil)
+  )
+
+2 + 3 * 7 / 2

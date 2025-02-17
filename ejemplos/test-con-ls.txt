@@ -1,0 +1,10 @@
+(progn
+  (repl-mode-activate "ls")
+  (setq repl-mode-result "\n---LS----\n")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input nil)
+  (setq repl-mode-use-stdin nil)
+  )
+
+-l ./

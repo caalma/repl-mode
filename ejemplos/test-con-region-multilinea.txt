@@ -1,0 +1,19 @@
+(progn
+  (repl-mode-activate "echo -e")
+  (setq repl-mode-result "\n")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input nil)
+  (setq repl-mode-use-stdin nil)
+  )
+
+
+"texto $HOME única"
+
+
+"texto \n \
+multilinea."
+
+
+"texto \n\
+multilinea." > archivo.txt

@@ -1,0 +1,12 @@
+(progn
+  (repl-mode-activate "factor")
+  (setq repl-mode-result "\n---FACTORIZACIÓN----\n")
+  (setq repl-mode-history-enabled nil)
+  (setq repl-mode-strip-result t)
+  (setq repl-mode-quote-input nil)
+  (setq repl-mode-use-stdin nil)
+  )
+
+8
+
+5 9
